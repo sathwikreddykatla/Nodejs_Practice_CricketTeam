@@ -40,7 +40,6 @@ app.get('/players/', async (request, response) => {
     convertDbObjectToResponseObject(each_player),
   )
   response.send(db_result)
-  return db_result
 })
 // post player_details
 app.post('/players/', async (request, response) => {
